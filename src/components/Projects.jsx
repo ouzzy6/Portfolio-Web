@@ -17,7 +17,7 @@ const projects = [
         title: "Sticker Web Clon",
         description: "Website for stickers, you can choose the number and the size and add to cart for the checkout and final price. Made with HTML, CSS and JS.",
         image: project2Image, // Reemplaza con la ruta de tu imagen
-        link: "https://enlace-al-proyecto1.comhttps://github.com/develhope/FS-ESP10-Team1-Project2/tree/develop" // Reemplaza con el enlace a tu proyecto
+        link: "https://github.com/develhope/FS-ESP10-Team1-Project2/tree/develop" // Reemplaza con el enlace a tu proyecto
     },
     {
         id: 3,
