@@ -20,7 +20,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send('service_wzth4qh', 'template_chwc5w9', formData, 'pu5nU8PjLwSpoWbEK')
+    emailjs.send('service_wzth4qh', 'template_u47d457', formData, 'pu5nU8PjLwSpoWbEK')
       .then(response => {
         setStatus('Message sent successfully!');
         setFormData({ name: '', email: '', message: '' });
