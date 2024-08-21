@@ -1,0 +1,20 @@
+.About-Me {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Centra el texto dentro del contenedor */
+    color: #11FCDB; /* Color del texto */
+    min-height: 50vh; /* Ocupa toda la altura de la ventana */
+    font-family: 'Montserrat', sans-serif; /* Tipografía */
+    font-size: 22px; /* Tamaño de fuente */
+    padding: 20px; /* Espacio alrededor del contenido */
+    margin-top: 5%;
+    text-align: left;
+  }
+  
+  .About-Me .content {
+    max-width: 1000px; /* Limita el ancho del contenido */
+    width: 100%; 
+
+  }

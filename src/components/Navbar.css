@@ -1,0 +1,49 @@
+.Navbar {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Asegura que todo el contenido esté centrado */
+  }
+  
+  .Navbar-Menu {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    gap: 180px; /* Espacio entre categorías */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Navbar-item {
+    /* Asegúrate de que los elementos li tienen un padding adecuado */
+    padding: 5px 0;
+  }
+  
+  .Navbar-item a {
+    text-decoration: none;
+    color: #666; /* Color de las categorías */
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  .Navbar-item a:hover {
+    color: #11FCDB; /* Color al hacer hover */
+  }
+  
+  .Navbar-item.active a {
+    color: #11FCDB; /* Color de la categoría activa */
+    border-bottom: 2px solid #11FCDB; /* Línea debajo del ítem activo */
+  }
+  
+  .Navbar-item a:hover,
+  .Navbar-item.active a:hover {
+    cursor: pointer;
+  }
+  
