@@ -2,8 +2,8 @@
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
     color: #11FCDB;
-    width: 75%;
-    margin-left: 15%;
+    width: 100%;
+    
   }
   
   .projects-title {
@@ -47,7 +47,7 @@
   
   .project-info {
     padding: 10px;
-    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para la descripción */
+    background: rgba(0, 0, 0, 0.738); /* Fondo semitransparente para la descripción */
     color: #fff; /* Color del texto para que contraste con el fondo */
     position: absolute;
     bottom: 0;
