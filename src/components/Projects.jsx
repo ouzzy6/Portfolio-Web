@@ -3,6 +3,7 @@ import '../components/Projects.css'
 import project1Image from '../media/Captura de pantalla 2024-08-21 202649.png'
 import project2Image from '../media/Captura de pantalla 2024-06-28 121129.png'
 import project3Image from '../media/Captura de pantalla 2024-08-21 204223.png'
+import project4Image from '../media/Captura de pantalla 2024-08-30 122041.png'
 
 const projects = [
     {
@@ -24,6 +25,13 @@ const projects = [
         title: "To-Do List",
         description: "App to add notes, update it's status and set the urgency of the task.",
         image: project3Image, // Reemplaza con la ruta de tu imagen
+        link: "https://ousamalist.netlify.app/" // Reemplaza con el enlace a tu proyecto
+    },
+    {
+        id: 4,
+        title: "IP-Search",
+        description: "Get information for an IP address.",
+        image: project4Image, // Reemplaza con la ruta de tu imagen
         link: "https://ousamalist.netlify.app/" // Reemplaza con el enlace a tu proyecto
     }
 ]
