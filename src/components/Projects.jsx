@@ -32,7 +32,7 @@ const projects = [
         title: "IP-Search",
         description: "Get information for an IP address.",
         image: project4Image, // Reemplaza con la ruta de tu imagen
-        link: "https://ousamalist.netlify.app/" // Reemplaza con el enlace a tu proyecto
+        link: "https://main--clinquant-malabi-499f1e.netlify.app/" // Reemplaza con el enlace a tu proyecto
     }
 ]
 
