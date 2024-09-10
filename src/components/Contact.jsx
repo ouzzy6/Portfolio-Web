@@ -67,7 +67,7 @@ function Contact() {
       </form>
 
       <div className='email'>
-      O si lo prefieres puedes escribir a ouzzy6@gmail.com
+      Or you can send an email to: ouzzy6@gmail.com
       </div>
       {status && <p className="contact-status">{status}</p>}
     </div>
