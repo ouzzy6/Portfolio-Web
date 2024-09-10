@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import SocialLinks from './components/SocialLinks';
 
 function App() {
   return (
@@ -18,8 +19,10 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/Skills" element={<Skills />} />
           <Route path="/Contact" element={<Contact />} />
+          
           {/* Agrega más rutas según sea necesario */}
         </Routes>
+        <SocialLinks />
       </div>
     </Router>
   );
