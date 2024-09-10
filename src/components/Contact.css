@@ -1,57 +1,102 @@
 .contact {
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #11FCDB;
-    width: 50%;
-    margin-left: 25%;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #11FCDB;
+  width: 50%;
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+.contact-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center; /* Centra el título */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #11FCDB;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0fb4b1;
+}
+
+.contact-status {
+  margin-top: 15px;
+  font-size: 1.2em;
+  text-align: center; /* Centra el mensaje de estado */
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contact {
+    width: 80%; /* Aumenta el ancho en pantallas medianas */
   }
-  
+
   .contact-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2em; /* Ajusta el tamaño del título */
   }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .contact-form label {
-    font-size: 1em;
-    margin-bottom: 5px;
-  }
-  
+
   .contact-form input,
   .contact-form textarea {
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    font-size: 0.9em; /* Reduce ligeramente el tamaño del texto */
   }
-  
-  .contact-form textarea {
-    resize: vertical;
-    min-height: 150px;
-  }
-  
+
   .contact-form button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #11FCDB;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+    padding: 8px 16px;
   }
-  
-  .contact-form button:hover {
-    background-color: #0fb4b1;
+}
+
+@media (max-width: 480px) {
+  .contact {
+    width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+    padding: 10px;
   }
-  
-  .contact-status {
-    margin-top: 15px;
-    font-size: 1.2em;
+
+  .contact-title {
+    font-size: 1.8em;
   }
-  
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.85em;
+  }
+
+  .contact-form button {
+    font-size: 0.85em;
+    padding: 6px 12px;
+  }
+}

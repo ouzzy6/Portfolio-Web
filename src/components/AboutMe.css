@@ -1,20 +1,44 @@
 .About-Me {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra horizontalmente el contenido */
-    justify-content: center; /* Centra verticalmente el contenido */
-    text-align: center; /* Centra el texto dentro del contenedor */
-    color: #11FCDB; /* Color del texto */
-    min-height: 50vh; /* Ocupa toda la altura de la ventana */
-    font-family: 'Montserrat', sans-serif; /* Tipografía */
-    font-size: 22px; /* Tamaño de fuente */
-    padding: 20px; /* Espacio alrededor del contenido */
-    margin-top: 5%;
-    text-align: left;
-  }
-  
-  .About-Me .content {
-    max-width: 1000px; /* Limita el ancho del contenido */
-    width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #11FCDB;
+  min-height: 50vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  padding: 20px;
+  margin-top: 5%;
+}
 
+.About-Me .content {
+  max-width: 1000px;
+  width: 100%;
+  text-align: left; /* El texto queda alineado a la izquierda */
+}
+
+/* Estilos responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .About-Me {
+    font-size: 18px; /* Reduce el tamaño de la fuente para tablets */
+    padding: 15px; /* Reduce el padding para tablets */
   }
+
+  .About-Me .content {
+    max-width: 90%; /* Limita el ancho del contenido a un 90% del ancho de la pantalla */
+    text-align: center; /* Centra el texto en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .About-Me {
+    font-size: 16px; /* Reduce aún más el tamaño de la fuente en móviles */
+    padding: 10px; /* Reduce el padding en móviles */
+  }
+
+  .About-Me .content {
+    max-width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible en móviles */
+    text-align: center; /* El texto se alinea al centro */
+  }
+}

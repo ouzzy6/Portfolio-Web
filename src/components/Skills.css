@@ -1,48 +1,93 @@
 .skills {
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #11FCDB;
-  }
-  
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #11FCDB;
+}
+
+.skills-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 40px;
+  width: 200px; /* Ajusta según sea necesario */
+  height: 70px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el cambio */
+}
+
+.skill-item:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del ítem al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Añade sombra para resaltar */
+}
+
+.skill-icon {
+  width: 40px; /* Ajusta el tamaño del ícono */
+  height: 40px;
+  object-fit: contain;
+}
+
+.skill-name {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
   .skills-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2em; /* Ajusta el tamaño del título en pantallas medianas */
   }
-  
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
+
   .skill-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #333;
-    border-radius: 8px;
-    padding: 40px;
-    width: 200px; /* Ajusta según sea necesario */
-    height: 70px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el cambio */
+    width: 150px; /* Reduce el tamaño del item */
+    padding: 20px; /* Reduce el padding para pantallas más pequeñas */
   }
-  
-  .skill-item:hover {
-    transform: scale(1.1); /* Aumenta el tamaño del ítem al pasar el ratón */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Añade sombra para resaltar */
-  }
-  
-  .skill-icon {
-    width: 40px; /* Ajusta el tamaño del ícono */
-    height: 40px;
-    object-fit: contain;
-  }
-  
+
   .skill-name {
-    font-size: 1.2em;
-    color: #fff;
+    font-size: 1em; /* Ajusta el tamaño del texto */
   }
-  
+
+  .skill-icon {
+    width: 30px; /* Ajusta el tamaño del ícono */
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-title {
+    font-size: 1.5em; /* Ajusta el tamaño del título para pantallas muy pequeñas */
+  }
+
+  .skills-list {
+    flex-direction: column; /* Cambia a una sola columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos en pantallas pequeñas */
+  }
+
+  .skill-item {
+    width: 100%; /* Los elementos ocupan todo el ancho en pantallas pequeñas */
+    padding: 15px;
+  }
+
+  .skill-name {
+    font-size: 0.9em; /* Ajusta el tamaño del texto */
+  }
+
+  .skill-icon {
+    width: 25px; /* Ajusta el tamaño del ícono */
+    height: 25px;
+  }
+}

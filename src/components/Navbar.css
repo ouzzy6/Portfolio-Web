@@ -1,49 +1,80 @@
 .Navbar {
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%; /* Asegúrate de que ocupe el ancho completo */
-    z-index: 1000;
-    display: flex;
-    justify-content: center; /* Asegura que todo el contenido esté centrado */
+  padding: 20px 10px; /* Añadido padding lateral para evitar recortes */
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.Navbar-Menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px; /* Espacio entre los elementos en pantallas grandes */
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap; /* Previene que los elementos se muevan a una nueva línea */
+  overflow-x: auto; /* Permite scroll horizontal en caso de ser necesario */
+}
+
+.Navbar-item {
+  padding: 5px 0;
+  white-space: nowrap; /* Asegura que el texto no se corte */
+}
+
+.Navbar-item a {
+  text-decoration: none;
+  color: #666;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.Navbar-item a:hover {
+  color: #11FCDB;
+}
+
+.Navbar-item.active a {
+  color: #11FCDB;
+  border-bottom: 2px solid #11FCDB;
+}
+
+.Navbar-item a:hover,
+.Navbar-item.active a:hover {
+  cursor: pointer;
+}
+
+/* Estilos responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .Navbar {
+    padding: 15px 10px; /* Reduce el padding en pantallas más pequeñas */
   }
-  
+
   .Navbar-Menu {
-    list-style: none;
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center;
-    gap: 180px; /* Espacio entre categorías */
-    margin: 0;
-    padding: 0;
+    gap: 60px; /* Reduce el espacio entre los elementos */
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
   }
-  
-  .Navbar-item {
-    /* Asegúrate de que los elementos li tienen un padding adecuado */
-    padding: 5px 0;
-  }
-  
+
   .Navbar-item a {
-    text-decoration: none;
-    color: #666; /* Color de las categorías */
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    transition: color 0.3s ease; /* Transición suave para el hover */
+    font-size: 16px; /* Reduce ligeramente el tamaño de la fuente */
   }
-  
-  .Navbar-item a:hover {
-    color: #11FCDB; /* Color al hacer hover */
+}
+
+@media (max-width: 480px) {
+  .Navbar {
+    padding: 10px 5px; /* Ajuste adicional para pantallas muy pequeñas */
   }
-  
-  .Navbar-item.active a {
-    color: #11FCDB; /* Color de la categoría activa */
-    border-bottom: 2px solid #11FCDB; /* Línea debajo del ítem activo */
+
+  .Navbar-Menu {
+    gap: 30px; /* Aún más pequeño el espacio entre elementos */
   }
-  
-  .Navbar-item a:hover,
-  .Navbar-item.active a:hover {
-    cursor: pointer;
+
+  .Navbar-item a {
+    font-size: 14px; /* Ajuste adicional del tamaño de la fuente */
   }
-  
+}

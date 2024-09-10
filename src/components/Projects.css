@@ -1,68 +1,116 @@
 .projects {
-    padding: 20px;
-    font-family: 'Montserrat', sans-serif;
-    color: #11FCDB;
-    width: 100%;
-    
-  }
-  
-  .projects-title {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    font-weight: lighter;
-  }
-  
-  .projects-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: #11FCDB;
+  width: 100%;
+}
+
+.projects-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-item {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(50% - 20px); /* Mantiene dos columnas en pantallas grandes */
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-item a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  width: 100%;
+  height: 350px; /* Ajusta la altura según sea necesario */
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.738);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.project-description {
+  font-size: 1em;
+  color: #ddd;
+}
+
+/* Estilos responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
   .project-item {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: calc(50% - 20px); /* Ajusta el ancho según el número de columnas que quieras */
-    position: relative; /* Necesario para posicionar la descripción sobre la imagen */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza el cambio */
-  }
-  
-  .project-item:hover {
-    transform: scale(1.05); /* Aumenta el tamaño del ítem al pasar el ratón */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Añade sombra para resaltar */
+    width: calc(100% - 20px); /* Cambia a una columna en pantallas más pequeñas */
+    margin: 0 auto; /* Centra los elementos */
   }
 
-  .project-item a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-  }
-  
   .project-image {
-    width: 100%;
-    height: 350px; /* Ajusta la altura según sea necesario */
-    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    height: 250px; /* Reduce la altura de la imagen en pantallas más pequeñas */
   }
-  
+
+  .projects-title {
+    font-size: 1.2em; /* Ajusta el tamaño del título */
+  }
+
   .project-info {
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.738); /* Fondo semitransparente para la descripción */
-    color: #fff; /* Color del texto para que contraste con el fondo */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    padding: 8px;
   }
-  
+
   .project-title {
-    font-size: 1.5em;
-    margin: 0;
+    font-size: 1.3em;
   }
-  
+
   .project-description {
-    font-size: 1em;
-    color: #ddd; /* Color del texto de la descripción */
+    font-size: 0.9em;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .project-item {
+    width: 100%; /* Ocupa el 100% del ancho en pantallas muy pequeñas */
+  }
+
+  .project-image {
+    height: 200px; /* Ajusta aún más la altura de la imagen en móviles */
+  }
+
+  .projects-title {
+    font-size: 1em;
+  }
+
+  .project-title {
+    font-size: 1.2em;
+  }
+
+  .project-description {
+    font-size: 0.85em;
+  }
+}
