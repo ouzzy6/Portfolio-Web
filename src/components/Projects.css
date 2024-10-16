@@ -9,12 +9,16 @@
   font-size: 1.5em;
   margin-bottom: 20px;
   font-weight: lighter;
+  margin-left: 35%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center;
+  gap: 60px;
 }
 
 .project-item {
